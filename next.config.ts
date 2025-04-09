@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    swcPlugins: [
+      [
+        '@swc/plugin-transform-imports',
+        {
+          '@': {
+            transform: '@/${1}',
+            preventFullImport: true
+          }
+        }
+      ]
+    ]
+  }
 };
 
 export default nextConfig;
