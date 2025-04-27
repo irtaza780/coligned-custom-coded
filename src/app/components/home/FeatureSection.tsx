@@ -65,7 +65,7 @@ const FeatureSection: React.FC = () => {
                   </svg>
                 </div>
                 <div className='text-primary-900 text-base font-sans leading-loose grow shrink w-[454px] basis-auto my-auto max-md:max-w-full'>
-                  Super useful and easy to use interface
+                  Super useful and easy to use interface 
                 </div>
               </div>
               <div className='flex w-full items-stretch gap-5 flex-wrap mt-3 rounded-lg max-md:max-w-full'>
@@ -99,37 +99,38 @@ const FeatureSection: React.FC = () => {
               </div>
             </div>
             <button
-              className='items-center bg-secondary-custom flex gap-5 text-sm text-primary-900 font-bold mt-10 rounded-lg hover:bg-secondary-200 transition-colors animate-fade-in'
-              onClick={() => console.log('Contact Now clicked')}
-            >
-              <div className='bg-secondary-custom self-stretch flex gap-2 my-auto px-6 py-4 max-md:px-5'>
-                <span>Contact Now</span>
-                <svg
-                  width='18'
-                  height='18'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M14.4301 5.93005L20.5001 12.0001L14.4301 18.0701'
-                    stroke='currentColor'
-                    strokeWidth='1.5'
-                    strokeMiterlimit='10'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                  <path
-                    d='M3.5 12H20.33'
-                    stroke='currentColor'
-                    strokeWidth='1.5'
-                    strokeMiterlimit='10'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  />
-                </svg>
-              </div>
-            </button>
+  className='items-center bg-secondary-custom flex gap-5 text-sm text-primary-900 font-bold mt-10 rounded-lg hover:bg-secondary-200 transition-colors animate-fade-in'
+  onClick={() => console.log('Contact Now clicked')}
+>
+  <div className='self-stretch flex gap-2 my-auto px-6 py-4 max-md:px-5'>
+    <span>Contact Now</span>
+    <svg
+      width='18'
+      height='18'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M14.4301 5.93005L20.5001 12.0001L14.4301 18.0701'
+        stroke='currentColor'
+        strokeWidth='1.5'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M3.5 12H20.33'
+        stroke='currentColor'
+        strokeWidth='1.5'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  </div>
+</button>
+
           </div>
         </div>
       </div>
