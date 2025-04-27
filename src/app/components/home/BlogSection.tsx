@@ -11,18 +11,18 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ image, category, title }) => {
   return (
     <div className='min-w-60 w-[410px]'>
-      <div className='aspect-[1.52] bg-gray-200 w-[410px] max-w-full rounded-[5px] flex items-center justify-center'>
-        <span className='text-gray-500'>{image}</span>
+      <div className='aspect-[1.52] bg-secondary-100 w-[410px] max-w-full rounded-lg flex items-center justify-center'>
+        <span className='text-primary-700'>{image}</span>
       </div>
       <div className='w-full max-w-[410px] mt-5'>
-        <div className='text-[rgba(19,17,38,1)] text-base font-normal leading-loose'>
+        <div className='text-primary-800 text-base font-sans leading-loose'>
           {category}
         </div>
-        <h3 className='text-[#201C44] text-2xl font-bold leading-8 mt-[26px]'>
+        <h3 className='text-primary-900 text-2xl font-heading leading-8 mt-[26px]'>
           {title}
         </h3>
         <button
-          className='border flex min-h-[50px] w-12 items-center gap-2 mt-[26px] px-3 py-[13px] rounded-[5px] border-[rgba(250,224,225,1)] border-solid hover:bg-[#faf5f5] transition-colors'
+          className='border flex min-h-[50px] w-12 items-center gap-2 mt-[26px] px-3 py-[13px] rounded-lg border-secondary-200 border-solid hover:bg-secondary-50 transition-colors'
           aria-label='Read more'
           onClick={() => console.log(`Read more about: ${title}`)}
         >
@@ -35,7 +35,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ image, category, title }) => {
           >
             <path
               d='M14.4301 5.93005L20.5001 12.0001L14.4301 18.0701'
-              stroke='#292D32'
+              stroke='currentColor'
               strokeWidth='1.5'
               strokeMiterlimit='10'
               strokeLinecap='round'
@@ -43,7 +43,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ image, category, title }) => {
             />
             <path
               d='M3.5 12H20.33'
-              stroke='#292D32'
+              stroke='currentColor'
               strokeWidth='1.5'
               strokeMiterlimit='10'
               strokeLinecap='round'
@@ -78,10 +78,10 @@ const BlogSection: React.FC = () => {
   return (
     <>
       <div className='self-center flex flex-col items-center mt-[91px] max-md:max-w-full max-md:mt-10'>
-        <h2 className='text-[rgba(32,28,68,1)] text-[38px] font-bold leading-[1.2] text-center max-md:max-w-full'>
+        <h2 className='text-primary-900 text-[38px] font-heading leading-[1.2] text-center max-md:max-w-full'>
           Our latest updates for you here!
         </h2>
-        <p className='text-[rgba(19,17,38,1)] text-base font-normal leading-loose mt-[11px]'>
+        <p className='text-primary-800 text-base font-sans leading-loose mt-[11px]'>
           Whats heppening around the World.
         </p>
       </div>
