@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const FeatureSection: React.FC = () => {
   return (
@@ -8,13 +9,14 @@ const FeatureSection: React.FC = () => {
       <div className='gap-5 flex max-md:flex-col max-md:items-stretch'>
         <div className='w-6/12 max-md:w-full max-md:ml-0'>
           <div className='flex grow items-stretch gap-2 flex-wrap max-md:max-w-full max-md:mt-10'>
-            <div className='aspect-[0.83] bg-secondary-custom w-full grow shrink-0 basis-0 max-md:max-w-full flex items-center justify-center rounded-lg shadow-soft'>
-              <span className='text-primary-700'>Feature Image</span>
+            <div className='aspect-[0.83] bg-secondary-50 w-full grow shrink-0 basis-0 max-md:max-w-full flex items-center justify-center rounded-lg shadow-soft'>
+              <Image src="/img/startuplife.svg" alt="Feature" width={500} height={500} />
+              {/* <span className='text-primary-700'>Feature Image</span> */}
             </div>
             <div className='mt-[387px] max-md:mt-10'>
               <div className='flex items-stretch gap-[9px]'>
-                <div className='bg-secondary-custom flex w-[19px] shrink-0 h-[46px] rounded-sm' />
-                <div className='bg-secondary-custom flex w-[19px] shrink-0 h-[46px] rounded-sm' />
+                <div className='bg-secondary-50 flex w-[19px] shrink-0 h-[46px] rounded-sm' />
+                <div className='bg-secondary-50 flex w-[19px] shrink-0 h-[46px] rounded-sm' />
               </div>
               <div className='flex items-stretch gap-[19px] text-xs text-primary-900 font-medium whitespace-nowrap mt-1 max-md:mr-[7px]'>
                 <div>S</div>
@@ -40,7 +42,7 @@ const FeatureSection: React.FC = () => {
             </p>
             <div className='w-full max-w-[530px] mt-10 max-md:max-w-full'>
               <div className='flex w-full items-stretch gap-5 flex-wrap rounded-lg max-md:max-w-full'>
-                <div className='items-center bg-secondary-custom flex min-h-[50px] gap-2 pl-3 pr-[11px] py-[13px] rounded-lg'>
+                <div className='items-center bg-secondary-50 flex min-h-[50px] gap-2 pl-3 pr-[11px] py-[13px] rounded-lg'>
                   <svg
                     width='24'
                     height='24'
@@ -69,7 +71,7 @@ const FeatureSection: React.FC = () => {
                 </div>
               </div>
               <div className='flex w-full items-stretch gap-5 flex-wrap mt-3 rounded-lg max-md:max-w-full'>
-                <div className='items-center bg-secondary-custom flex min-h-[50px] gap-2 pl-3 pr-[11px] py-[13px] rounded-lg'>
+                <div className='items-center bg-secondary-50 flex min-h-[50px] gap-2 pl-3 pr-[11px] py-[13px] rounded-lg'>
                   <svg
                     width='24'
                     height='24'
@@ -99,7 +101,7 @@ const FeatureSection: React.FC = () => {
               </div>
             </div>
             <button
-  className='items-center bg-secondary-custom flex gap-5 text-sm text-primary-900 font-bold mt-10 rounded-lg hover:bg-secondary-200 transition-colors animate-fade-in'
+  className='items-center bg-secondary-50 flex gap-5 text-sm text-primary-900 font-bold mt-10 rounded-lg hover:bg-secondary-200 transition-colors animate-fade-in'
   onClick={() => console.log('Contact Now clicked')}
 >
   <div className='self-stretch flex gap-2 my-auto px-6 py-4 max-md:px-5'>

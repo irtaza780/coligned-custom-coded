@@ -1,18 +1,19 @@
 'use client';
 
 import React from 'react';
-
+import Image from 'next/image';
 interface BlogCardProps {
   image: string;
   category: string;
   title: string;
+  src: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ image, category, title }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ image, category, title, src }) => {
   return (
     <div className='min-w-60 w-[410px]'>
       <div className='aspect-[1.52] bg-secondary-100 w-[410px] max-w-full rounded-lg flex items-center justify-center'>
-        <span className='text-primary-700'>{image}</span>
+        <Image src={src} alt={title} width={500} height={500} />
       </div>
       <div className='w-full max-w-[410px] mt-5'>
         <div className='text-primary-800 text-base font-sans leading-loose'>
@@ -61,16 +62,19 @@ const BlogSection: React.FC = () => {
     {
       image: 'Blog Image 1',
       category: 'Growth',
+      src: '/img/blog1.svg',
       title: '15 ways to grow your saas in 21 days with no money'
     },
     {
       image: 'Blog Image 2',
       category: 'Career',
+      src: '/img/blog2.svg',
       title: 'Why everyone is moving today to subscribtions'
     },
     {
       image: 'Blog Image 3',
       category: 'Design',
+      src: '/img/blog3.svg',
       title: '9 ways to make it quick and never look back again in your life'
     }
   ];
@@ -88,6 +92,7 @@ const BlogSection: React.FC = () => {
       <div className='flex gap-5 flex-wrap mt-[52px] max-md:mr-1 max-md:mt-10 justify-center'>
         {blogPosts.map((post, index) => (
           <BlogCard
+            src={post.src}
             key={index}
             image={post.image}
             category={post.category}

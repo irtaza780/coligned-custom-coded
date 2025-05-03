@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -155,7 +155,8 @@ const ContactSection: React.FC = () => {
         </div>
         <div className='w-6/12 ml-5 max-md:w-full max-md:ml-0'>
           <div className='aspect-[1.08] bg-secondary-50 w-full grow rounded-lg max-md:max-w-full max-md:mt-10 flex items-center justify-center shadow-soft'>
-            <span className='text-primary-700'>Contact Image</span>
+            <Image src="/img/presenting.svg" alt="Contact" width={500} height={500} />
+            {/* <span className='text-primary-700'>Contact Image</span> */}
           </div>
         </div>
       </div>
