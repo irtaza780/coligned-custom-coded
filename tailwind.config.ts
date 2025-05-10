@@ -39,8 +39,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        heading: ['var(--font-poppins)'],
+        sans: ['var(--font-plus-jakarta-sans)'],
+        heading: ['var(--font-plus-jakarta-sans)'],
       },
       spacing: {
         '128': '32rem',

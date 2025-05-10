@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const StatsSection: React.FC = () => {
   return (
@@ -139,7 +140,8 @@ const StatsSection: React.FC = () => {
               <div className="md:col-span-2">
                 <div className="relative aspect-[4/3] bg-white rounded-lg shadow-sm p-4">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-gray-500">Stats Chart</span>
+                    <Image src="/img/client.svg" alt="Stats" width={500} height={500} />
+                    {/* <span className="text-gray-500">Stats Chart</span> */}
                   </div>
                   <div className="absolute bottom-4 right-4 text-sm font-medium">
                     14%
